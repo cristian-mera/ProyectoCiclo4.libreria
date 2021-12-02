@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {RouterModule, Routes} from "@angular/router"
 import {HttpClientModule} from "@angular/common/http"
+import { FormsModule } from '@angular/forms';
 
 //SERVICIOS
 import {LibroService} from "./libro/libro.service"
@@ -22,6 +23,7 @@ const routes=[
     AppComponent,
     LibroComponent,
     HeaderComponent,
+    FormsModule
   
   ],
   imports: [

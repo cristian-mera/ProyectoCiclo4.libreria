@@ -3,7 +3,7 @@ import { HttpClient } from "@angular/common/http"
 import { environment } from 'src/environments/environment';
 import { Libro } from './libro';
 import { catchError, map, Observable, pipe, throwError } from 'rxjs';
-
+import { FormsModule } from '@angular/forms';
 
 @Injectable({
   providedIn: 'root'
