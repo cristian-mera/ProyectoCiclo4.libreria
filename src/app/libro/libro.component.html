@@ -1,0 +1,36 @@
+
+
+<div class="header">
+
+    <h1>{{title}}</h1>
+    <h2>{{subTitle}}</h2>
+</div>
+
+
+<div class="container">
+
+    <table class="table table-responsive">
+        <thead>
+            <tr >
+                <th scope="col">ID</th>
+                <th scope="col">Titulo</th>
+                <th scope="col">ISBN</th>
+                <th scope="col">Paginas</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Fecha carga</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let libro of libros">
+                <th scope="row">{{libro.id}}</th>
+                <td>{{libro.titulo}}</td>
+                <td>{{libro.isbn}}</td>
+                <td>{{libro.numPaginas}}</td>
+                <td>{{libro.estado}}</td>
+                <td>{{libro.createAt}}</td>
+                
+            </tr>
+        </tbody>
+    </table>
+</div>
+    
